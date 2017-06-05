@@ -4,6 +4,7 @@ import telepot
 from pprint import pprint
 import datetime
 import pandas_datareader.data as web
+import fix_yahoo_finance
 import time
 
 class Person:
@@ -88,7 +89,7 @@ while(True):
 
 #check for validity of stock code
     try: 
-        result = web.DataReader(requestStock,'yahoo', start,)
+        result = web.get_data_yahoo(requestStock, start,)
     except:
         print("wrong input")    
         bot.sendMessage(p1.id, errorMsg)
