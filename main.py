@@ -24,7 +24,7 @@ def send_start_msg(_chat_id):
     bot.sendMessage(_chat_id, "EX:Samsung Electronics: 005930.ks, Apple: aapl")
 
 #connecting to bot
-bot = telepot.Bot('351258906:AAGdjeEa817a6AJAyAMok1FfYuO-htbtvxw')
+bot = telepot.Bot('bot token ')
 bot.getMe()
 
 start = datetime.datetime(2017,1,1)
